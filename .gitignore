@@ -2,3 +2,4 @@
 .sass*
 public_html/*
 *.zip
+.zedstate
