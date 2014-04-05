@@ -43,25 +43,24 @@ require_once('../header.php');
 	<div class="page-header">
 	    <h1>Campaign Updates</h1>
 	</div>
-	<h2>Latest updates</h2>
-	
 	<?=
 	    $miniblog_posts;
 	?>
 	
 	<div class="navigation">
-		<? if(!$single) { ?>
-			<? if($miniblog_previous) {	?> <p class="previous-link"><?=$miniblog_previous?></p>	<? } ?>
-			<? if($miniblog_next) {	?>	<p class="next-link"><?=$miniblog_next?></p> <? } ?>
-		<? } ?>
-		<? if($single) { ?>
+		<?php if(!$single) { ?>
+			<?php if($miniblog_previous) {	?> <p class="previous-link"><?=$miniblog_previous?></p>	<?php } ?>
+			<?php if($miniblog_next) {	?>	<p class="next-link"><?=$miniblog_next?></p> <?php } ?>
+		<?php } ?>
+		<?php if($single) { ?>
 			<p class="previous-link"><a href="<?=$config['miniblog-filename']?>">&laquo; return to posts</a></p>
-		<? } ?>
+		<?php } ?>
 		<div class="clear"></div>
 	</div>
 	<div class="footer">
 		<!-- a link back is REQUIRED under the terms of the license. To remove the link back see http://www.spyka.net/licensing -->
-		<p>Powered by <a href="http://www.spyka.net/scripts/php/miniblog">miniblog</a> created by <a href="http://www.spyka.net">spyka Webmaster</a></p>
+        <!-- Admin note: I tried, I swear I did. "License purchases are currently disabled." 
+                Maybe some day we will get a license! -->
 	</div>
 </div>
 </body>

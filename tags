@@ -1820,4 +1820,9 @@ visible-print	css/bootstrap.css	6798
 hidden-print	css/bootstrap.css	6801
 hidden-print	css/bootstrap.css	6804
 hidden-print	css/bootstrap.css	6808
+mb_connect	update/includes/functions.php	8
+mb_config	update/includes/functions.php	15
+mb_slug	update/includes/functions.php	26
+mb_slug_exists	update/includes/functions.php	48
+generate_option_list	update/includes/functions.php	63
 print_header	header.php	8
