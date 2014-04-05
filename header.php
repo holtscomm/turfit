@@ -36,7 +36,7 @@ function print_header($donor_active="", $testimonials_active="", $contact_active
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
       <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project Overview<b class="caret"></b></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Case for Support<b class="caret"></b></a>
           <ul class="dropdown-menu">
           <li><a href="'.$wwwroot.'pregame.php">Pre Game</a></li>
           <li><a href="'.$wwwroot.'gameplan.php">Game Plan</a></li>
@@ -47,7 +47,7 @@ function print_header($donor_active="", $testimonials_active="", $contact_active
           <li><a href="'.$wwwroot.'postgame.php">Post Game Stats</a></li>
           </ul>
       </li>
-      <li'. $update_active .'><a href="'.$wwwroot.'update/">Updates</a></li>
+      <li'. $update_active .'><a href="'.$wwwroot.'update/">News</a></li>
       <li'. $donor_active .'><a href="'.$wwwroot.'donors.php">Donor Recognition</a></li>
       <li'. $testimonials_active .'><a href="'.$wwwroot.'testimonials.php">Testimonials</a></li>
       <li'. $contact_active .'><a href="'.$wwwroot.'contact.php">Contact Us</a></li>
