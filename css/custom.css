@@ -19,3 +19,9 @@ body {
   width: 100%;
   margin-bottom: 20px;
 }
+
+/* line 20, ../sass/custom.scss */
+.donation-number {
+  width: auto;
+  height: 100px;
+}

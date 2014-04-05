@@ -1,3 +1,21 @@
+<?php
+define('IN_BLOG', true);
+define('PATH', 'update/');
+require_once(PATH . 'includes/miniblog.php');
+require_once('header.php');
+
+// Get the current donations figure
+$sql = "SELECT config_value FROM miniblog_config WHERE config_name = 'donations-to-date'";
+$result = mysql_query($sql);
+$donations = 0;
+if(mysql_num_rows($result) > 0)
+{
+    while($config_value = mysql_fetch_assoc($result))
+    {
+        $donations = $config_value['config_value'];
+    }
+}
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -33,9 +51,8 @@
   </head>
   <body>
   <div class="container">
-  <?php
-      require_once('header.php');
-      echo print_header('');
+  <?=
+    print_header('');
   ?>
 
     <div class="row">
@@ -80,15 +97,9 @@
     </div>
     <div class="row">
         <div class="col-md-8">
-            <h2>Donations to date</h2>
-            <img src="images/numbers/0.png" style="width:auto; height: 100px">
-            <img src="images/numbers/1.png" style="width:auto; height: 100px">
-            <img src="images/numbers/0.png" style="width:auto; height: 100px">
-            <img src="images/numbers/0.png" style="width:auto; height: 100px">
-            <img src="images/numbers/1.png" style="width:auto; height: 100px">
-            <img src="images/numbers/0.png" style="width:auto; height: 100px">
-            <img src="images/numbers/1.png" style="width:auto; height: 100px">
-            <img src="images/numbers/1.png" style="width:auto; height: 100px">
+            <?= "<h2>There have been \$$donations donated so far!</h2>"?>
+            <div id="donations">
+            </div>
         </div>
         <div class="col-md-4">
             <a target="_blank" href="https://secure.e2rm.com/registrant/startup.aspx?eid=127859">
@@ -105,8 +116,29 @@
     <script src="js/bootstrap.min.js"></script>
     
     <script type="text/javascript">
-       $("#carousel").carousel({
-            interval: 20000
+        var calculate_donations = function(donations) {
+            var DIGITS = 8;
+            var donationString = parseInt(donations) + "";`
+            var donationArray = donationString.split("");
+            var paddingArray = new Array();
+            var digitsToPad = DIGITS - donationArray.length;
+            for(var i = 0; i < digitsToPad; i++) {
+                paddingArray[i] = 0;
+            }
+            var printArray = paddingArray.concat(donationArray);
+            
+            var htmlContent = "";
+            for(var i = 0; i < DIGITS; i++) {
+                htmlContent += "<img class='donation-number' src='images/numbers/" + printArray[i] + ".png'>";
+            }
+            $("#donations").html(htmlContent);
+        };
+    
+       $(document).ready(function(){
+           $("#carousel").carousel({
+                interval: 20000
+           });
+           calculate_donations(<?=$donations?>);
        });
     </script>
   </body>
