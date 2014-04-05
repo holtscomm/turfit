@@ -5,10 +5,29 @@
 <title>miniblog admin</title>
 <link rel="stylesheet" href="images/styles.css" type="text/css" />
 <script type="text/javascript" src="images/dialog.js"></script>
-<script type="text/javascript" src="/turfit/js/vendor/tinymce/tinymce.min.js"></script>
+<?php
+$wwwroot = "";
+// Adjust wwwroot to be the wwwroot for your project. I.E. production would use '/'
+if(strstr($_SERVER["SERVER_NAME"], 'localhost'))
+{
+    $wwwroot = "/turfit/";
+}
+else if(strstr($_SERVER["SERVER_NAME"], 'turfit.ca'))
+{
+    if(strstr($_SERVER["REQUEST_URI"], '/new/'))
+    {
+        $wwwroot = "/new/";
+    }
+}
+?>
+<script type="text/javascript" src="<?=$wwwroot?>js/vendor/tinymce/tinymce.min.js"></script>
 <script type="text/javascript">
 tinymce.init({
-    selector: "textarea"
+    selector: "textarea",
+    width: 1000,
+    height: 400,
+    browser_spellcheck: true,
+    plugins: "image"
  });
 </script>
 </head>
@@ -22,4 +41,5 @@ tinymce.init({
 		<li><a href="admin.php?mode=logout" onclick="return confirm_dialog('admin.php?mode=logout', 'Are you sure you want to logout?');">Logout</a></li>
 	</ul>
 	<br class="clear" />
+	
 </div>

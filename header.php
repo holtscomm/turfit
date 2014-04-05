@@ -7,8 +7,19 @@
  */
 function print_header($donor_active="", $testimonials_active="", $contact_active="", $update_active="")
 {
+    $wwwroot = "";
     // Adjust wwwroot to be the wwwroot for your project. I.E. production would use '/'
-    $wwwroot = "/turfit/";
+    if(strstr($_SERVER["SERVER_NAME"], 'localhost'))
+    {
+        $wwwroot = "/turfit/";
+    }
+    else if(strstr($_SERVER["SERVER_NAME"], 'turfit.ca'))
+    {
+        if(strstr($_SERVER["REQUEST_URI"], '/new/'))
+        {
+            $wwwroot = "/new/";
+        }
+    }
 
     return '
 <nav class="navbar navbar-default" role="navigation">
