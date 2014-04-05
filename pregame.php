@@ -73,7 +73,7 @@ Let's Turf It!</p>
     <a class="pull-left" href="images/gregyuel.jpg">
       <img class="media-object img-rounded" src="images/gregyuel.jpg" title="Greg Yuel, Campaign Chair" alt="Greg Yuel, Campaign Chair" style="width:250px">
     </a>
-    <h4 class="media-heading">Greg Yuel, Campaign Chair</h4>
+    <h4 id="greg" class="media-heading">Greg Yuel, Campaign Chair</h4>
     <p>"The Bowl has the greatest potential to positively impact sports in our city. I am delighted to do my part in helping bring this fundraising campaign to fruition."</p>
     <small>- Greg Yuel, Campaign Chair</small>
   </div>

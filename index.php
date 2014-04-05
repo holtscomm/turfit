@@ -8,6 +8,8 @@
     <link href="css/custom.css" rel="stylesheet" media="screen">
 
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+    
+    
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -36,16 +38,76 @@
       echo print_header('');
   ?>
 
-  <div class="page-header">
-    <h1>Let's Turf It!</h1>
-  </div>
-  <p>Use the menu above to find out more about The Bowl Field Goal Campaign. Do your part by clicking Donate Now! in the bar above, or clicking the button below.</p>
-  <p><a class="btn btn-success btn-md" target="_blank" href="https://secure.e2rm.com/registrant/startup.aspx?eid=127859">Donate Now!</a></p>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="images/fieldgoalcampaignlogo.jpeg" width="100%">
+        </div>
+        <div class="col-md-8">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+              </ol>
+            
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                <a href="pregame.php#greg">
+                  <img src="images/gregyuel.jpg" alt="Greggy boy">
+                  <div class="carousel-caption">
+                    Greg Yuel, click to read more about him!
+                  </div>
+                </a>
+                </div>
+                <div class="item">
+                  <img src="images/mudbath.jpg" alt="Muddy">
+                  <div class="carousel-caption">
+                      Always be mudding
+                  </div>
+                </div>
+              </div>
+            
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <h2>Donations to date</h2>
+            <img src="images/numbers/0.png" style="width:auto; height: 100px">
+            <img src="images/numbers/1.png" style="width:auto; height: 100px">
+            <img src="images/numbers/0.png" style="width:auto; height: 100px">
+            <img src="images/numbers/0.png" style="width:auto; height: 100px">
+            <img src="images/numbers/1.png" style="width:auto; height: 100px">
+            <img src="images/numbers/0.png" style="width:auto; height: 100px">
+            <img src="images/numbers/1.png" style="width:auto; height: 100px">
+            <img src="images/numbers/1.png" style="width:auto; height: 100px">
+        </div>
+        <div class="col-md-4">
+            <a target="_blank" href="https://secure.e2rm.com/registrant/startup.aspx?eid=127859">
+                <img src="images/footballdonate.png" style="width:100%">
+            </a>        
+        </div>
+    </div>
+    
 
-</div>
+  </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript">
+       $("#carousel").carousel({
+            interval: 20000
+       });
+    </script>
   </body>
 </html>
