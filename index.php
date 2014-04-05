@@ -97,8 +97,10 @@ if(mysql_num_rows($result) > 0)
     </div>
     <div class="row">
         <div class="col-md-8">
-            <?= "<h2>There have been \$$donations donated so far!</h2>"?>
-            <div id="donations">
+            <div id="donation-box">
+                <h2>Donations</h2>
+                <div id="donations">
+                </div>
             </div>
         </div>
         <div class="col-md-4">
@@ -118,7 +120,7 @@ if(mysql_num_rows($result) > 0)
     <script type="text/javascript">
         var calculate_donations = function(donations) {
             var DIGITS = 8;
-            var donationString = parseInt(donations) + "";`
+            var donationString = parseInt(donations) + "";
             var donationArray = donationString.split("");
             var paddingArray = new Array();
             var digitsToPad = DIGITS - donationArray.length;
@@ -129,7 +131,7 @@ if(mysql_num_rows($result) > 0)
             
             var htmlContent = "";
             for(var i = 0; i < DIGITS; i++) {
-                htmlContent += "<img class='donation-number' src='images/numbers/" + printArray[i] + ".png'>";
+                htmlContent += "<img class='donation-number' src='images/numbers/" + printArray[i] + ".jpg'>";
             }
             $("#donations").html(htmlContent);
         };

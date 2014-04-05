@@ -1,7 +1,7 @@
 /* line 1, ../sass/custom.scss */
 body {
   margin: 0;
-  background: url("../images/scoreboard_test.jpeg") top center;
+  background: url("../images/scoreboard.jpg") top center;
   background-size: 100%;
   background-color: black;
 }
@@ -24,4 +24,15 @@ body {
 .donation-number {
   width: auto;
   height: 100px;
+  margin: 1px;
+  border: 1px solid;
+}
+
+/* line 27, ../sass/custom.scss */
+#donation-box {
+  border: 1px solid;
+}
+/* line 29, ../sass/custom.scss */
+#donation-box #donations {
+  text-align: center;
 }

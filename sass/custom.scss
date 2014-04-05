@@ -20,4 +20,13 @@ body {
 .donation-number {
     width: auto;
     height: 100px;
+    margin: 1px;
+    border: 1px solid;
+}
+
+#donation-box {
+    border: 1px solid;
+    #donations {
+        text-align: center;
+    }
 }
