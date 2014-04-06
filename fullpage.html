@@ -45,38 +45,46 @@
 	
 	/* Backgrounds will cover all the section
 	* --------------------------------------- */
-	#section0,
-	#section1,
-	#section2,
-	#section3{
+	#pregame,
+	#gameplan,
+	#layout,
+	#firsthalf,
+	#timeout,
+	#secondhalf,
+	#postgame {
 		background-size: cover;
 	}
 	
 	/* Defining each sectino background and styles 
 	* --------------------------------------- */
-	#section0{
+	#pregame {
 		background-image: url(images/bench.jpg);
 		padding: 30% 0 0 0;
 	}
-	#section1{
-	    background-image: url(images/chalkboard.jpg);
+	#gameplan {
+	    background-image: url(images/clipboard.jpg);
 		padding: 6% 0 0 0;
 	}
-	#section2{
-		background-image: url(images/clipboard.jpg);
+	#layout {
+		background-image: url(images/flyover.jpg);
 		padding: 6% 0 0 0;
 	}
-	#section3{
+	#firsthalf {
 		background-image: url(images/firsthalf.jpg);
 		padding: 6% 0 0 0;
 	}
-	#section4{
+	#timeout {
+	    background-image: url(images/chalkboard.jpg);
+	    padding: 6% 0 0 0;
+	}
+	#secondhalf {
 	    background-image: url(images/secondhalf.jpg);
 	    padding: 6% 0 0 0;
 	}
-	#section3 h1{
-		color: #000;
+	#postgame {
+	    background-image: url(images/postgamestats.jpg);
 	}
+	
 	</style>
 
     <script type="text/javascript">
@@ -102,11 +110,13 @@
     </script>
   </head>
   <body>
-    <div class="section " id="section0"><h1>Think of the possibilities</h1></div>
-    <div class="section" id="section1"><h1>Slide Backgrounds</h1></div>
-    <div class="section" id="section2"><h1>Lovely images <br />for a lovely page</h1></div>
-    <div class="section" id="section3"><h1>One Image = One thousand words</h1></div>
-    <div class="section" id="section4"><h1>Let's do this</h1></div>
+    <div class="section" id="pregame"><h1>Pre game party</h1></div>
+    <div class="section" id="gameplan"><h1></h1></div>
+    <div class="section" id="layout"><h1>Dat Layout</h1></div>
+    <div class="section" id="firsthalf"><h1></h1></div>
+    <div class="section" id="timeout"><h1>Time out!</h1></div>
+    <div class="section" id="secondhalf"><h1></h1></div>
+    <div class="section" id="postgame"><h1></h1></div>
 
     
   </body>
