@@ -588,9 +588,13 @@
 			//because it will be checked later inside a setTimeout and the value might change
 			var localIsResizing = isResizing; 
 
+            // Setting these up out here so they can actually be used
+            var slideAnchorLink = null;
+            var slideIndex = null;
+
 			if(activeSlide.length){
-				var slideAnchorLink = activeSlide.data('anchor');
-				var slideIndex = activeSlide.index();
+				slideAnchorLink = activeSlide.data('anchor');
+				slideIndex = activeSlide.index();
 			}
 
 			// If continuousVertical && we need to wrap around
@@ -899,7 +903,7 @@
 			
 				if(!options.loopHorizontal){
 					//hidding it for the fist slide, showing for the rest
-					section.find('.controlArrow.prev').toggle(slideIndex!=0);
+					section.find('.controlArrow.prev').toggle(slideIndex!==0);
 
 					//hidding it for the last slide, showing for the rest
 					section.find('.controlArrow.next').toggle(!destiny.is(':last-child'));

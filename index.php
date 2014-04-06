@@ -71,7 +71,7 @@ if(mysql_num_rows($result) > 0)
               <div class="carousel-inner">
                 <div class="item active">
                 <a href="pregame.php#greg">
-                  <img src="images/gregyuel.jpg" alt="Greggy boy">
+                  <img src="images/gregyuel.jpg" alt="Greg Yuel">
                   <div class="carousel-caption">
                     Greg Yuel, click to read more about him!
                   </div>

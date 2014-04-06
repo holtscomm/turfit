@@ -15,7 +15,7 @@ body {
 }
 
 /* line 15, ../sass/custom.scss */
-#carousel {
+.carousel {
   width: 100%;
   margin-bottom: 20px;
 }
@@ -29,10 +29,10 @@ body {
 }
 
 /* line 27, ../sass/custom.scss */
-#donation-box {
+.donation-box {
   border: 1px solid;
 }
 /* line 29, ../sass/custom.scss */
-#donation-box #donations {
+.donation-box div {
   text-align: center;
 }

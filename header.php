@@ -36,15 +36,14 @@ function print_header($donor_active="", $testimonials_active="", $contact_active
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
       <li class="dropdown">
-          <a href="'.$wwwroot.'fullpage.html" class="dropdown-toggle" data-toggle="dropdown">Case for Support<b class="caret"></b></a>
+          <a href="'.$wwwroot.'fullpage.php" class="dropdown-toggle" data-toggle="dropdown">Case for Support<b class="caret"></b></a>
           <ul class="dropdown-menu">
-          <li><a href="'.$wwwroot.'fullpage.html#pregame">Pre Game</a></li>
-          <li><a href="'.$wwwroot.'fullpage.html#gameplan">Game Plan</a></li>
-          <li><a href="'.$wwwroot.'fullpage.html#layout">Facility Layout</a></li>
-          <li><a href="'.$wwwroot.'fullpage.html#firsthalf">First Half</a></li>
-          <li><a href="'.$wwwroot.'fullpage.html#timeout">Time Out</a></li>
-          <li><a href="'.$wwwroot.'fullpage.html#secondhalf">Second Half</a></li>
-          <li><a href="'.$wwwroot.'fullpage.html#postgame">Post Game Stats</a></li>
+          <li><a href="'.$wwwroot.'fullpage.php#pregame">Pre Game</a></li>
+          <li><a href="'.$wwwroot.'fullpage.php#gameplan">Game Plan</a></li>
+          <li><a href="'.$wwwroot.'fullpage.php#firsthalf">First Half</a></li>
+          <li><a href="'.$wwwroot.'fullpage.php#timeout">Time Out</a></li>
+          <li><a href="'.$wwwroot.'fullpage.php#secondhalf">Second Half</a></li>
+          <li><a href="'.$wwwroot.'fullpage.php#postgame">Post Game Stats</a></li>
           </ul>
       </li>
       <li'. $update_active .'><a href="'.$wwwroot.'update/">Updates</a></li>
