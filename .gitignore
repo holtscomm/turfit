@@ -3,4 +3,5 @@
 public_html/*
 *.zip
 .zedstate
+.DS_Store
 tags

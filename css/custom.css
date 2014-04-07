@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Franchise';
+    src: url('../fonts/Franchise-Bold.ttf');
+}
+
 /* line 1, ../sass/custom.scss */
 body {
   margin: 0;
