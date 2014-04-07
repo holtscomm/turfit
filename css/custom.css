@@ -36,14 +36,3 @@ body {
 #donation-box #donations {
   text-align: center;
 }
-
-/* line 34, ../sass/custom.scss */
-nav {
-  font-family: 'Franchise';
-  font-size: x-large;
-}
-
-/* line 39, ../sass/custom.scss */
-.navbar-brand {
-  font-size: x-large;
-}
