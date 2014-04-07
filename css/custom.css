@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'Franchise';
-    src: url('../fonts/Franchise-Bold.ttf');
-}
-
 /* line 1, ../sass/custom.scss */
 body {
   margin: 0;
@@ -20,7 +15,7 @@ body {
 }
 
 /* line 15, ../sass/custom.scss */
-.carousel {
+#carousel {
   width: 100%;
   margin-bottom: 20px;
 }
@@ -34,10 +29,21 @@ body {
 }
 
 /* line 27, ../sass/custom.scss */
-.donation-box {
+#donation-box {
   border: 1px solid;
 }
 /* line 29, ../sass/custom.scss */
-.donation-box div {
+#donation-box #donations {
   text-align: center;
+}
+
+/* line 34, ../sass/custom.scss */
+nav {
+  font-family: 'Franchise';
+  font-size: x-large;
+}
+
+/* line 39, ../sass/custom.scss */
+.navbar-brand {
+  font-size: x-large;
 }
