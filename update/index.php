@@ -7,13 +7,13 @@ require_once('../header.php');
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>miniblog</title>
+<title>Field Goal Campaign News</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Bootstrap -->
 <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="../css/custom.css" rel="stylesheet" media="screen">
 
-<link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+<link rel="shortcut icon" type="image/png" href="../images/favicon.ico">
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -34,6 +34,14 @@ require_once('../header.php');
     })();
 
 </script>
+
+<style type="text/css">
+    body {
+        background: url('../images/clipboard.jpg') top center no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+</style>
 </head>
 
 <body>
@@ -43,9 +51,17 @@ require_once('../header.php');
 	<div class="page-header">
 	    <h1>Campaign Updates</h1>
 	</div>
-	<?=
-	    $miniblog_posts;
-	?>
+	<div class="row">
+    	<div class="col-md-8">
+    	<?=
+    	    $miniblog_posts;
+    	?>
+    	</div>
+    	<div class="col-md-4">
+    	    <br /><br /><br />
+    	    <img src="../images/footballdonate.png" width="290px" height="165px">
+    	</div>
+	</div>
 	
 	<div class="navigation">
 		<?php if(!$single) { ?>
