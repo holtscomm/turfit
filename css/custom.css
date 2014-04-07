@@ -28,11 +28,7 @@ body {
   border: 1px solid;
 }
 
-/* line 27, ../sass/custom.scss */
-#donation-box {
-  border: 1px solid;
-}
-/* line 29, ../sass/custom.scss */
-#donation-box #donations {
+/* line 28, ../sass/custom.scss */
+.donation-box #donations {
   text-align: center;
 }

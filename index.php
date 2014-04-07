@@ -35,6 +35,27 @@ if(mysql_num_rows($result) > 0)
       <!--<script src="js/respond.min.js"></script>-->
     <![endif]-->
 
+    <!-- AddThis Smart Layers BEGIN -->
+    <!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5342337c6f476df6"></script>
+    <script type="text/javascript">
+      addthis.layers({
+        'theme' : 'transparent',
+        'share' : {
+          'position' : 'left',
+          'numPreferredServices' : 5
+        }, 
+        'follow' : {
+          'services' : [
+            {'service': 'facebook', 'id': 'thebowlcampaign'},
+            {'service': 'twitter', 'id': 'thebowlcampaign'}
+          ]
+        },   
+        'recommended' : {} 
+      });
+    </script>
+    <!-- AddThis Smart Layers END -->
+
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
@@ -56,8 +77,8 @@ if(mysql_num_rows($result) > 0)
   ?>
 
     <div class="row">
-        <div class="col-md-4">
-            <img src="images/fieldgoalcampaignlogo.jpeg" width="100%">
+        <div class="col-md-4 text-center">
+            <img src="images/fieldgoalcolor.png" width="290px" height="217px">
         </div>
         <div class="col-md-8">
             <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -70,6 +91,10 @@ if(mysql_num_rows($result) > 0)
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
+                <a href="http://localhost:8080/turfit/update/?post=bacon-ipsum">
+                    <img src="">
+                </div>
+                <div class="item ">
                 <a href="pregame.php#greg">
                   <img src="images/gregyuel.jpg" alt="Greggy boy">
                   <div class="carousel-caption">
@@ -97,8 +122,8 @@ if(mysql_num_rows($result) > 0)
     </div>
     <div class="row">
         <div class="col-md-8">
-            <div id="donation-box">
-                <h2>Donations</h2>
+            <div class="donation-box">
+                <h2 class="text-center">Donations</h2>
                 <div id="donations">
                 </div>
             </div>
