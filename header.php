@@ -46,9 +46,13 @@ function print_header($donor_active="", $testimonials_active="", $contact_active
           <li><a href="'.$wwwroot.'fullpage.php#postgame">Post Game Stats</a></li>
           </ul>
       </li>
+<<<<<<< HEAD
       <li'. $update_active .'><a href="'.$wwwroot.'update/">Updates</a></li>
       <li'. $donor_active .'><a href="'.$wwwroot.'donors.php">Donor Recognition</a></li>
       <li'. $testimonials_active .'><a href="'.$wwwroot.'testimonials.php">Testimonials</a></li>
+=======
+      <li'. $update_active .'><a href="'.$wwwroot.'update/">News</a></li>
+>>>>>>> master
       <li'. $contact_active .'><a href="'.$wwwroot.'contact.php">Contact Us</a></li>
       <li><a target="_blank" href="https://secure.e2rm.com/registrant/startup.aspx?eid=127859">Donate Now!</a></li>
     </ul>
