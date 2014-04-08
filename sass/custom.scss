@@ -30,11 +30,13 @@ body {
     }
 }
 
-// nav {
-//     font-family: 'Franchise';
-//     font-size: x-large;
-// }
+@font-family
 
-// .navbar-brand {
-//     font-size: x-large;
-// }
+nav {
+    font-family: 'Franchise';
+    font-size: x-large;
+}
+
+.navbar-brand {
+    font-size: x-large;
+}

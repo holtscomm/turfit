@@ -69,6 +69,11 @@ if(mysql_num_rows($result) > 0)
         })();
 
     </script>
+    <style>
+    body {
+        background: url('images/scoreboard_test.jpeg') top center;
+    }
+    </style>
   </head>
   <body>
   <div class="container">
@@ -103,7 +108,7 @@ if(mysql_num_rows($result) > 0)
                 </a>
                 </div>
                 <div class="item">
-                  <img src="images/mudbath.jpg" alt="Muddy">
+                  <img src="images/fieldgoalcolor.png" alt="Muddy">
                   <div class="carousel-caption">
                       Always be mudding
                   </div>
