@@ -1,5 +1,19 @@
 <?php
 
+$wwwroot = "";
+// Adjust wwwroot to be the wwwroot for your project. I.E. production would use '/'
+if(strstr($_SERVER["SERVER_NAME"], 'localhost'))
+{
+    $wwwroot = "/turfit/";
+}
+else if(strstr($_SERVER["SERVER_NAME"], 'turfit.ca'))
+{
+    if(strstr($_SERVER["REQUEST_URI"], '/new/'))
+    {
+        $wwwroot = "/new/";
+    }
+}
+
 /**
  * Function: print_header
  * Parameter(s):

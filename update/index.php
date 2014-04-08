@@ -9,6 +9,11 @@ require_once('../header.php');
 <head>
 <title>Field Goal Campaign News</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="Let's Turfit - The Bowl Field Goal Campaign" />
+<meta property="og:image" content="images/fieldgoalcolor.png" /> 
+<meta property="og:description" content="Home page for The Bowl Field Goal Campaign!" />
+<meta property="og:url" content="http://<?= $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'] ?>" />
+
 <!-- Bootstrap -->
 <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="../css/custom.css" rel="stylesheet" media="screen">
@@ -42,6 +47,26 @@ require_once('../header.php');
         background-attachment: fixed;
     }
 </style>
+<!-- AddThis Smart Layers BEGIN -->
+<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5342337c6f476df6"></script>
+<script type="text/javascript">
+  addthis.layers({
+    'theme' : 'transparent',
+    'share' : {
+      'position' : 'left',
+      'numPreferredServices' : 5
+    }, 
+    'follow' : {
+      'services' : [
+        {'service': 'facebook', 'id': 'thebowlcampaign'},
+        {'service': 'twitter', 'id': 'thebowlcampaign'}
+      ]
+    },   
+    'recommended' : {} 
+  });
+</script>
+<!-- AddThis Smart Layers END -->
 </head>
 
 <body>

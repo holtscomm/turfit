@@ -1,6 +1,11 @@
+@font-face {
+  font-family: Franchise;
+  src: url("../fonts/Franchise-Bold.ttf");
+}
+
 /* Style for our header texts 
 * --------------------------------------- */
-/* line 3, ../sass/fullpage.scss */
+/* line 5, ../sass/fullpage.scss */
 h1 {
   font-size: 5em;
   font-family: arial,helvetica;
@@ -11,7 +16,7 @@ h1 {
 
 /* Centered texts in each section 
 * --------------------------------------- */
-/* line 13, ../sass/fullpage.scss */
+/* line 15, ../sass/fullpage.scss */
 .section {
   text-align: center;
   background-size: contain;
@@ -21,43 +26,43 @@ h1 {
 
 /* Defining each section background and styles 
 * --------------------------------------- */
-/* line 22, ../sass/fullpage.scss */
+/* line 24, ../sass/fullpage.scss */
 .pregame {
-  background-image: url(../images/bkgd/pregame.jpg);
+  background-image: url(../images/bkgd/pregame_min.jpg);
   padding: 30% 0 0 0;
 }
 
-/* line 26, ../sass/fullpage.scss */
+/* line 28, ../sass/fullpage.scss */
 .gameplan {
-  background-image: url(../images/bkgd/gameplan.jpg);
+  background-image: url(../images/bkgd/gameplan_min.jpg);
   padding: 6% 0 0 0;
 }
 
-/* line 30, ../sass/fullpage.scss */
+/* line 32, ../sass/fullpage.scss */
 .firsthalf {
-  background-image: url(../images/bkgd/firsthalf.jpg);
+  background-image: url(../images/bkgd/firsthalf_min.jpg);
   padding: 6% 0 0 0;
 }
 
-/* line 34, ../sass/fullpage.scss */
+/* line 36, ../sass/fullpage.scss */
 .timeout {
-  background-image: url(../images/bkgd/timeout.jpg);
+  background-image: url(../images/bkgd/timeout_min.jpg);
   padding: 6% 0 0 0;
 }
 
-/* line 38, ../sass/fullpage.scss */
+/* line 40, ../sass/fullpage.scss */
 .secondhalf {
-  background-image: url(../images/bkgd/secondhalf.jpg);
+  background-image: url(../images/bkgd/secondhalf_min.jpg);
   padding: 6% 0 0 0;
 }
 
-/* line 42, ../sass/fullpage.scss */
+/* line 44, ../sass/fullpage.scss */
 .postgame {
-  background-image: url(../images/bkgd/postgamestats.jpg);
+  background-image: url(../images/bkgd/postgamestats_min.jpg);
   padding: 6% 0 0 0;
 }
 
-/* line 47, ../sass/fullpage.scss */
+/* line 49, ../sass/fullpage.scss */
 .menu {
   position: fixed;
   top: 0;
@@ -67,9 +72,10 @@ h1 {
   width: 100%;
   padding: 0;
   margin: 0;
-  font-family: Helvetica;
+  font-family: Franchise, Helvetica;
+  font-size: x-large;
 }
-/* line 58, ../sass/fullpage.scss */
+/* line 61, ../sass/fullpage.scss */
 .menu li {
   display: inline-block;
   margin: 10px;
@@ -82,31 +88,32 @@ h1 {
   -o-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 70, ../sass/fullpage.scss */
+/* line 73, ../sass/fullpage.scss */
 .menu li:hover {
   background: white;
   background: rgba(255, 255, 255, 0.8);
 }
-/* line 75, ../sass/fullpage.scss */
+/* line 78, ../sass/fullpage.scss */
 .menu li.active {
   background: #666;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
 }
-/* line 79, ../sass/fullpage.scss */
+/* line 82, ../sass/fullpage.scss */
 .menu li.active a {
   color: #fff;
   padding: 9px 18px;
   display: block;
 }
-/* line 84, ../sass/fullpage.scss */
+/* line 87, ../sass/fullpage.scss */
 .menu li.active a:hover {
   color: #fff;
 }
-/* line 88, ../sass/fullpage.scss */
+/* line 91, ../sass/fullpage.scss */
 .menu li a {
   text-decoration: none;
   color: #000;
   padding: 9px 18px;
   display: block;
+  vertical-align: center;
 }

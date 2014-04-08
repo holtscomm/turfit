@@ -1,3 +1,5 @@
+@import 'utils/_font.scss';
+
 /* Style for our header texts 
 * --------------------------------------- */
 h1{
@@ -20,27 +22,27 @@ h1{
 /* Defining each section background and styles 
 * --------------------------------------- */
 .pregame {
-    background-image: url(../images/bkgd/pregame.jpg);
+    background-image: url(../images/bkgd/pregame_min.jpg);
     padding: 30% 0 0 0;
 }
 .gameplan {
-    background-image: url(../images/bkgd/gameplan.jpg);
+    background-image: url(../images/bkgd/gameplan_min.jpg);
     padding: 6% 0 0 0;
 }
 .firsthalf {
-    background-image: url(../images/bkgd/firsthalf.jpg);
+    background-image: url(../images/bkgd/firsthalf_min.jpg);
     padding: 6% 0 0 0;
 }
 .timeout {
-    background-image: url(../images/bkgd/timeout.jpg);
+    background-image: url(../images/bkgd/timeout_min.jpg);
     padding: 6% 0 0 0;
 }
 .secondhalf {
-    background-image: url(../images/bkgd/secondhalf.jpg);
+    background-image: url(../images/bkgd/secondhalf_min.jpg);
     padding: 6% 0 0 0;
 }
 .postgame {
-    background-image: url(../images/bkgd/postgamestats.jpg);
+    background-image: url(../images/bkgd/postgamestats_min.jpg);
     padding: 6% 0 0 0;
 }
 
@@ -53,7 +55,8 @@ h1{
 	width: 100%;
 	padding: 0;
 	margin:0;
-	font-family: Helvetica;
+	font-family: Franchise, Helvetica;
+	font-size: x-large;
 	
     li {
 	display:inline-block;
@@ -90,6 +93,7 @@ h1{
         color: #000;
         padding: 9px 18px;
         display:block;
+        vertical-align: center;
         }
     }
 }
