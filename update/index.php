@@ -59,7 +59,9 @@ require_once('../header.php');
     	</div>
     	<div class="col-md-4">
     	    <br /><br /><br />
-    	    <img src="../images/footballdonate.png" width="290px" height="165px">
+    	    <a href="https://secure.e2rm.com/registrant/startup.aspx?eid=127859" target="_blank">
+    	        <img src="../images/footballdonate.png" width="290px" height="165px" style="border-radius: 10px">
+    	    </a>
     	</div>
 	</div>
 	
