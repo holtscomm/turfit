@@ -1,5 +1,19 @@
 <?php
 
+$wwwroot = "";
+// Adjust wwwroot to be the wwwroot for your project. I.E. production would use '/'
+if(strstr($_SERVER["SERVER_NAME"], 'localhost'))
+{
+    $wwwroot = "/turfit/";
+}
+else if(strstr($_SERVER["SERVER_NAME"], 'turfit.ca'))
+{
+    if(strstr($_SERVER["REQUEST_URI"], '/new/'))
+    {
+        $wwwroot = "/new/";
+    }
+}
+
 /**
  * Function: print_header
  * Parameter(s):
@@ -30,7 +44,7 @@ function print_header($donor_active="", $testimonials_active="", $contact_active
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="'.$wwwroot.'">Home</a>
+    <a class="navbar-brand" href="'.$wwwroot.'"><img src="'.$wwwroot.'images/turfit-pennant.png" height="40px" style="margin:-10px"></a>
   </div>
 
   <div class="collapse navbar-collapse navbar-ex1-collapse">

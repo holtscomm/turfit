@@ -21,6 +21,11 @@ if(mysql_num_rows($result) > 0)
   <head>
     <title>Let's Turfit!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property="og:title" content="Let's Turfit - The Bowl Field Goal Campaign" />
+    <meta property="og:image" content="<?= $wwwroot ?>images/fieldgoalcolor.png" /> 
+    <meta property="og:description" content="Home page for The Bowl Field Goal Campaign!" />
+    <meta property="og:url" content="http://<?= $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'] ?>" />
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/custom.css" rel="stylesheet" media="screen">
@@ -34,6 +39,27 @@ if(mysql_num_rows($result) > 0)
       <!--<script src="js/html5shiv.js"></script>-->
       <!--<script src="js/respond.min.js"></script>-->
     <![endif]-->
+
+    <!-- AddThis Smart Layers BEGIN -->
+    <!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5342337c6f476df6"></script>
+    <script type="text/javascript">
+      addthis.layers({
+        'theme' : 'transparent',
+        'share' : {
+          'position' : 'left',
+          'numPreferredServices' : 5
+        }, 
+        'follow' : {
+          'services' : [
+            {'service': 'facebook', 'id': 'thebowlcampaign'},
+            {'service': 'twitter', 'id': 'thebowlcampaign'}
+          ]
+        },   
+        'recommended' : {} 
+      });
+    </script>
+    <!-- AddThis Smart Layers END -->
 
     <script type="text/javascript">
 
@@ -57,7 +83,7 @@ if(mysql_num_rows($result) > 0)
 
     <div class="row">
         <div class="col-md-4">
-            <img src="images/fieldgoalcampaignlogo.jpeg" width="100%">
+            <img src="images/fieldgoalcolor.png" width="290px" height="217px" class="field-goal-home">
         </div>
         <div class="col-md-8">
             <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -65,22 +91,25 @@ if(mysql_num_rows($result) > 0)
               <ol class="carousel-indicators">
                 <li data-target="#carousel" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
               </ol>
             
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
-                <a href="pregame.php#greg">
-                  <img src="images/gregyuel.jpg" alt="Greg Yuel">
-                  <div class="carousel-caption">
-                    Greg Yuel, click to read more about him!
-                  </div>
+                <a href="http://localhost:8080/turfit/update/?post=bacon-ipsum">
+                    <img src="images/scoreboard.jpg" alt="Scoreboards and such">
                 </a>
                 </div>
+                <div class="item ">
+                    <a href="pregame.php#greg">
+                      <img src="images/gregyuel.jpg" alt="Greg Yuel">
+                    </a>
+                </div>
                 <div class="item">
-                  <img src="images/mudbath.jpg" alt="Muddy">
+                  <img src="images/clipboard.jpg" alt="Clippy">
                   <div class="carousel-caption">
-                      Always be mudding
+                      Cliptastic
                   </div>
                 </div>
               </div>
@@ -97,8 +126,8 @@ if(mysql_num_rows($result) > 0)
     </div>
     <div class="row">
         <div class="col-md-8">
-            <div id="donation-box">
-                <h2>Donations</h2>
+            <div class="donation-box">
+                <h2 class="text-center">Donations</h2>
                 <div id="donations">
                 </div>
             </div>
