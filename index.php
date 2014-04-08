@@ -48,6 +48,11 @@ if(mysql_num_rows($result) > 0)
         })();
 
     </script>
+    <style>
+    body {
+        background: url('images/scoreboard_test.jpeg') top center;
+    }
+    </style>
   </head>
   <body>
   <div class="container">
@@ -57,7 +62,7 @@ if(mysql_num_rows($result) > 0)
 
     <div class="row">
         <div class="col-md-4">
-            <img src="images/fieldgoalcampaignlogo.jpeg" width="100%">
+            <img src="images/fieldgoalcolor.png" width="100%">
         </div>
         <div class="col-md-8">
             <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -78,7 +83,7 @@ if(mysql_num_rows($result) > 0)
                 </a>
                 </div>
                 <div class="item">
-                  <img src="images/mudbath.jpg" alt="Muddy">
+                  <img src="images/fieldgoalcolor.png" alt="Muddy">
                   <div class="carousel-caption">
                       Always be mudding
                   </div>
