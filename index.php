@@ -21,6 +21,11 @@ if(mysql_num_rows($result) > 0)
   <head>
     <title>Let's Turfit!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property="og:title" content="Let's Turfit - The Bowl Field Goal Campaign" />
+    <meta property="og:image" content="<?= $wwwroot ?>images/fieldgoalcolor.png" /> 
+    <meta property="og:description" content="Home page for The Bowl Field Goal Campaign!" />
+    <meta property="og:url" content="http://<?= $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'] ?>" />
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/custom.css" rel="stylesheet" media="screen">
@@ -69,11 +74,6 @@ if(mysql_num_rows($result) > 0)
         })();
 
     </script>
-    <style>
-    body {
-        background: url('images/scoreboard_test.jpeg') top center;
-    }
-    </style>
   </head>
   <body>
   <div class="container">
@@ -82,8 +82,8 @@ if(mysql_num_rows($result) > 0)
   ?>
 
     <div class="row">
-        <div class="col-md-4 text-center">
-            <img src="images/fieldgoalcolor.png" width="290px" height="217px">
+        <div class="col-md-4">
+            <img src="images/fieldgoalcolor.png" width="290px" height="217px" class="field-goal-home">
         </div>
         <div class="col-md-8">
             <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -91,26 +91,25 @@ if(mysql_num_rows($result) > 0)
               <ol class="carousel-indicators">
                 <li data-target="#carousel" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
               </ol>
             
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
                 <a href="http://localhost:8080/turfit/update/?post=bacon-ipsum">
-                    <img src="">
-                </div>
-                <div class="item ">
-                <a href="pregame.php#greg">
-                  <img src="images/gregyuel.jpg" alt="Greg Yuel">
-                  <div class="carousel-caption">
-                    Greg Yuel, click to read more about him!
-                  </div>
+                    <img src="images/scoreboard.jpg" alt="Scoreboards and such">
                 </a>
                 </div>
+                <div class="item ">
+                    <a href="pregame.php#greg">
+                      <img src="images/gregyuel.jpg" alt="Greg Yuel">
+                    </a>
+                </div>
                 <div class="item">
-                  <img src="images/fieldgoalcolor.png" alt="Muddy">
+                  <img src="images/clipboard.jpg" alt="Clippy">
                   <div class="carousel-caption">
-                      Always be mudding
+                      Cliptastic
                   </div>
                 </div>
               </div>

@@ -1,7 +1,8 @@
+@import 'utils/_font.scss';
+
 body {
     margin: 0;
-    background: url('../images/scoreboard.jpg') top center;
-    background-size: 100%;
+    background: url('../images/scoreboard_test.jpeg') top center;
     background-color: black;
 }
 
@@ -12,9 +13,13 @@ body {
     background-color: rgba(255,255,255,.87);
 }
 
-#carousel {
-    width: 100%;
+.carousel {
     margin-bottom:20px;
+    img {
+        width: auto;
+        height: 400px;
+        max-height: 400px;
+    }
 }
 
 .donation-number {
@@ -30,8 +35,6 @@ body {
     }
 }
 
-@font-family
-
 nav {
     font-family: 'Franchise';
     font-size: x-large;
@@ -39,4 +42,29 @@ nav {
 
 .navbar-brand {
     font-size: x-large;
+}
+
+.contact-us-page {
+    background: url('../images/Chalkboard-ContactUs_min.jpg') top center;
+    
+    .container {
+        background-color: rgb(255,255,255);
+        background-color: rgba(255,255,255,0);
+    }
+    .contact-us {
+        position: relative;
+        right: 100px;
+        width: auto;
+        height: 300px;
+    }
+    .contact-forms {
+        position: relative;
+        bottom: 100px;
+    }
+    .mailing-arrow {
+        position: relative;
+        width: auto;
+        height: 400px;
+        left: 400px;
+    }
 }
