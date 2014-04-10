@@ -42,8 +42,8 @@ require_once('../header.php');
 
 <style type="text/css">
     body {
-        background: url('../images/clipboard.jpg') top center no-repeat;
-        background-size: 100%;
+        background: url('../images/Clipboard.jpg') top center no-repeat;
+        background-size: 65%;
         background-attachment: fixed;
     }
 </style>

@@ -23,7 +23,7 @@ if(mysql_num_rows($result) > 0)
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <meta property="og:title" content="Let's Turfit - The Bowl Field Goal Campaign" />
-    <meta property="og:image" content="<?= $wwwroot ?>images/fieldgoalcolor.png" /> 
+    <meta property="og:image" content="<?= "http://" . $_SERVER['SERVER_NAME'] . $wwwroot ?>images/fieldgoalcolor.png" /> 
     <meta property="og:description" content="Home page for The Bowl Field Goal Campaign!" />
     <meta property="og:url" content="http://<?= $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'] ?>" />
     <!-- Bootstrap -->
@@ -55,8 +55,7 @@ if(mysql_num_rows($result) > 0)
             {'service': 'facebook', 'id': 'thebowlcampaign'},
             {'service': 'twitter', 'id': 'thebowlcampaign'}
           ]
-        },   
-        'recommended' : {} 
+        }
       });
     </script>
     <!-- AddThis Smart Layers END -->
@@ -81,15 +80,11 @@ if(mysql_num_rows($result) > 0)
     </style>
   </head>
   <body>
-  <div class="container">
   <?=
     print_header('');
   ?>
-
+  <div class="container index">
     <div class="row">
-        <div class="col-md-4">
-            <img src="images/fieldgoalcolor.png" width="290px" height="217px" class="field-goal-home">
-        </div>
         <div class="col-md-8">
             <div id="carousel" class="carousel slide" data-ride="carousel">
               <!-- Indicators -->
@@ -102,19 +97,24 @@ if(mysql_num_rows($result) > 0)
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
-                <a href="http://localhost:8080/turfit/update/?post=bacon-ipsum">
-                    <img src="images/scoreboard.jpg" alt="Scoreboards and such">
-                </a>
-                </div>
-                <div class="item ">
-                    <a href="pregame.php#greg">
-                      <img src="images/gregyuel.jpg" alt="Greg Yuel">
-                    </a>
+                  <a href="http://turfit.ca/donors/?post=greg-yuel-donates-500000-over-1million-raised-so-far">
+                    <img src="images/gregyuel.jpg" alt="Greg Yuel">
+                  </a>
+                  <div class="carousel-caption">
+                      Thank you, Greg Yuel, Campaign Chair, for your generous gift of $500,000!
+                  </div>
                 </div>
                 <div class="item">
-                  <img src="images/clipboard.jpg" alt="Clippy">
+                  <a href="contact.php">
+                    <img src="images/savethedate.jpg" alt="Save the date!">
+                  </a>
+                </div>
+                <div class="item">
+                  <a href="http://turfit.ca/update/?post=whats-happening-at-the-bowl">
+                    <img src="images/underconstruction.jpg" alt="The Bowl under construction">
+                  </a>
                   <div class="carousel-caption">
-                      Cliptastic
+                      What's happening at The Bowl?
                   </div>
                 </div>
               </div>
@@ -128,19 +128,20 @@ if(mysql_num_rows($result) > 0)
               </a>
             </div>
         </div>
+        <div class="col-md-4 text-center">
+            <a target="_blank" href="https://secure.e2rm.com/registrant/startup.aspx?eid=127859">
+              <img src="images/footballdonate.png" style="width:290px; height: 165px; border-radius: 10px">
+            </a>
+            <img src="images/fieldgoalcolor.png" width="290px" height="217px" class="field-goal-home">
+        </div>
     </div>
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12 text-center">
             <div class="donation-box">
-                <h2 class="text-center">Donations</h2>
+                <h1 class="text-center">Amount Raised to Date</h1>
                 <div id="donations">
                 </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <a target="_blank" href="https://secure.e2rm.com/registrant/startup.aspx?eid=127859">
-                <img src="images/footballdonate.png" style="width:100%">
-            </a>        
         </div>
     </div>
     
@@ -163,7 +164,7 @@ if(mysql_num_rows($result) > 0)
             }
             var printArray = paddingArray.concat(donationArray);
             
-            var htmlContent = "";
+            var htmlContent = "<img class='donation-number' src='images/numbers/dollarsign.jpg'>";
             for(var i = 0; i < DIGITS; i++) {
                 htmlContent += "<img class='donation-number' src='images/numbers/" + printArray[i] + ".jpg'>";
             }

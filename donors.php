@@ -28,7 +28,7 @@
     </script>
   </head>
   <body>
-  <div class="container">
+  <div class="container non-index">
 
 <?php
     require_once('header.php');

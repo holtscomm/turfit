@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="images/styles.css" type="text/css" />
 <script type="text/javascript" src="images/dialog.js"></script>
 <?php
-$wwwroot = "";
+$wwwroot = "/";
 // Adjust wwwroot to be the wwwroot for your project. I.E. production would use '/'
 if(strstr($_SERVER["SERVER_NAME"], 'localhost'))
 {

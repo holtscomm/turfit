@@ -1,6 +1,6 @@
 <?php
 
-$wwwroot = "";
+$wwwroot = "/";
 // Adjust wwwroot to be the wwwroot for your project. I.E. production would use '/'
 if(strstr($_SERVER["SERVER_NAME"], 'localhost'))
 {
@@ -21,7 +21,7 @@ else if(strstr($_SERVER["SERVER_NAME"], 'turfit.ca'))
  */
 function print_header($donor_active="", $testimonials_active="", $contact_active="", $update_active="")
 {
-    $wwwroot = "";
+    $wwwroot = "/";
     // Adjust wwwroot to be the wwwroot for your project. I.E. production would use '/'
     if(strstr($_SERVER["SERVER_NAME"], 'localhost'))
     {
@@ -36,7 +36,8 @@ function print_header($donor_active="", $testimonials_active="", $contact_active
     }
 
     return '
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
       <span class="sr-only">Toggle navigation</span>
@@ -61,9 +62,11 @@ function print_header($donor_active="", $testimonials_active="", $contact_active
           </ul>
       </li>
       <li'. $update_active .'><a href="'.$wwwroot.'update/">News</a></li>
+      <li'. $donor_active .'><a href="'.$wwwroot.'donors/">Donor Stories</a></li>
       <li'. $contact_active .'><a href="'.$wwwroot.'contact.php">Contact Us</a></li>
       <li><a target="_blank" href="https://secure.e2rm.com/registrant/startup.aspx?eid=127859">Donate Now!</a></li>
     </ul>
   </div><!-- /.navbar-collapse -->
+</div>
 </nav>';
 }

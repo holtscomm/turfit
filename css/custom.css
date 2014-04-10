@@ -1,83 +1,111 @@
 @font-face {
   font-family: Franchise;
-  src: url("../fonts/Franchise-Bold.ttf");
+  src: url("../fonts/Franchise-Bold.ttf") format("truetype");
 }
 
 /* line 3, ../sass/custom.scss */
 body {
   margin: 0;
+  padding-top: 52px;
   background: url("../images/scoreboard_test.jpeg") top center;
   background-color: black;
 }
 
-/* line 9, ../sass/custom.scss */
+/* line 10, ../sass/custom.scss */
 .container {
   width: 960px;
-  padding-bottom: 10px;
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.87);
 }
 
-/* line 16, ../sass/custom.scss */
+/* line 14, ../sass/custom.scss */
+.non-index {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.87);
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+/* line 21, ../sass/custom.scss */
+.index {
+  background-color: #688c8e;
+  background-color: rgba(104, 140, 142, 0.95);
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+/* line 28, ../sass/custom.scss */
 .carousel {
   margin-bottom: 20px;
 }
-/* line 18, ../sass/custom.scss */
+/* line 30, ../sass/custom.scss */
 .carousel img {
   width: auto;
   height: 400px;
   max-height: 400px;
 }
+/* line 38, ../sass/custom.scss */
+.carousel .carousel-inner .item img {
+  margin: 0 auto;
+}
 
-/* line 25, ../sass/custom.scss */
+/* line 45, ../sass/custom.scss */
 .donation-number {
   width: auto;
   height: 100px;
-  margin: 1px;
+  margin: 5px;
   border: 1px solid;
 }
 
-/* line 33, ../sass/custom.scss */
+/* line 53, ../sass/custom.scss */
 .donation-box #donations {
   text-align: center;
 }
 
-/* line 38, ../sass/custom.scss */
+/* line 58, ../sass/custom.scss */
 nav {
-  font-family: 'Franchise';
-  font-size: x-large;
+  background-color: rgba(255, 255, 255, 0);
+}
+/* line 61, ../sass/custom.scss */
+nav .container {
+  background-color: white;
 }
 
-/* line 43, ../sass/custom.scss */
+/* line 66, ../sass/custom.scss */
 .navbar-brand {
   font-size: x-large;
 }
 
-/* line 47, ../sass/custom.scss */
+/* line 70, ../sass/custom.scss */
 .contact-us-page {
   background: url("../images/Chalkboard-ContactUs_min.jpg") top center;
 }
-/* line 50, ../sass/custom.scss */
+/* line 73, ../sass/custom.scss */
 .contact-us-page .container {
   background-color: white;
   background-color: rgba(255, 255, 255, 0);
 }
-/* line 54, ../sass/custom.scss */
+/* line 77, ../sass/custom.scss */
 .contact-us-page .contact-us {
   position: relative;
   right: 100px;
   width: auto;
   height: 300px;
 }
-/* line 60, ../sass/custom.scss */
+/* line 83, ../sass/custom.scss */
 .contact-us-page .contact-forms {
   position: relative;
   bottom: 100px;
 }
-/* line 64, ../sass/custom.scss */
+/* line 87, ../sass/custom.scss */
 .contact-us-page .mailing-arrow {
   position: relative;
   width: auto;
   height: 400px;
   left: 400px;
+}
+
+/* line 95, ../sass/custom.scss */
+.post {
+  background-color: white;
+  padding: 5px;
+  border-radius: 2px;
 }

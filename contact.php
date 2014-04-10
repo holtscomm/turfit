@@ -32,8 +32,7 @@
             {'service': 'facebook', 'id': 'thebowlcampaign'},
             {'service': 'twitter', 'id': 'thebowlcampaign'}
           ]
-        },   
-        'recommended' : {} 
+        }
       });
     </script>
     <!-- AddThis Smart Layers END -->

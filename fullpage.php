@@ -71,7 +71,7 @@
 
     </script>
     <?php
-    $wwwroot = "";
+    $wwwroot = "/";
     // Adjust wwwroot to be the wwwroot for your project. I.E. production would use '/'
     if(strstr($_SERVER["SERVER_NAME"], 'localhost'))
     {

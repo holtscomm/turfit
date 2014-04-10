@@ -2,15 +2,27 @@
 
 body {
     margin: 0;
+    padding-top: 52px;
     background: url('../images/scoreboard_test.jpeg') top center;
     background-color: black;
 }
 
 .container {
     width: 960px;
-    padding-bottom: 10px;
+}
+
+.non-index {
     background-color: rgb(255,255,255);
-    background-color: rgba(255,255,255,.87);
+    background-color: rgba(255,255,255, .87);
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.index {
+    background-color: rgb(104, 140, 142);
+    background-color: rgba(104, 140, 142, .95);
+    padding-bottom: 10px;
+    padding-top: 5px;
 }
 
 .carousel {
@@ -20,12 +32,20 @@ body {
         height: 400px;
         max-height: 400px;
     }
+    
+    .carousel-inner {
+        .item {
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
 }
 
 .donation-number {
     width: auto;
     height: 100px;
-    margin: 1px;
+    margin: 5px;
     border: 1px solid;
 }
 
@@ -36,8 +56,11 @@ body {
 }
 
 nav {
-    font-family: 'Franchise';
-    font-size: x-large;
+    background-color: rgba(255,255,255,0);
+    
+    .container {
+        background-color: white;
+    }
 }
 
 .navbar-brand {
@@ -67,4 +90,10 @@ nav {
         height: 400px;
         left: 400px;
     }
+}
+
+.post {
+    background-color: white;
+    padding: 5px;
+    border-radius: 2px;
 }
