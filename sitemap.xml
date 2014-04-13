@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://turfit.ca/</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://turfit.ca/fullpage.php</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://turfit.ca/update/</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://turfit.ca/donors/</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://turfit.ca/contact.php</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://turfit.ca/donors/?post=greg-yuel-donates-500000-over-1-million-raised-to-date</loc>
+  <changefreq>yearly</changefreq>
+</url>
+<url>
+  <loc>http://turfit.ca/update/?post=whats-happening-at-the-bowl</loc>
+  <changefreq>yearly</changefreq>
+</url>
+</urlset>

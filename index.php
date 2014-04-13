@@ -97,7 +97,7 @@ if(mysql_num_rows($result) > 0)
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
-                  <a href="http://turfit.ca/donors/?post=greg-yuel-donates-500000-over-1million-raised-so-far">
+                  <a href="http://turfit.ca/donors/?post=greg-yuel-donates-500000-over-1-million-raised-to-date">
                     <img src="images/gregyuel.jpg" alt="Greg Yuel">
                   </a>
                   <div class="carousel-caption">

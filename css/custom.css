@@ -109,3 +109,10 @@ nav .container {
   padding: 5px;
   border-radius: 2px;
 }
+
+/* line 101, ../sass/custom.scss */
+.blog {
+  background: url("../images/Clipboard.jpg") top center no-repeat;
+  background-size: 1050px;
+  background-attachment: fixed;
+}
